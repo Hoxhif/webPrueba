@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="oscuro3.css">
+    <title>Busqueda Libro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img class="logopagina" src="imagenes/logo.png" alt="https://images.vexels.com/content/229082/preview/book-circles-logo-82dff4.png">
+        </div>
+        <div class="searchbar">
+            <input type="text" placeholder="Buscar Libro por Nombre/ISBN/Autor"/>
+            <button type="button"><i class="bi bi-search"></i></button> 
+        </div>
+        <div class="options">
+            <div class="options">
+                <i class="bi bi-list"></i>
+                <i class="bi bi-person-circle"></i>
+                <i class="bi bi-cart"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <p class="results-text">Mostrando resultados de: <span>x</span></p>
+        
+        <div class="books-container">
+            <!-- Libro 1 -->
+            <div class="book-item">
+                <div class="book-image">Imagen</div>
+                <div class="book-info">
+                    <h3>Nombre Libro <span>⭐⭐⭐⭐⭐</span></h3>
+                    <p>Nombre Autor</p>
+                    <p>Nombre Editorial</p>
+                    <p>Stock: Sí/No</p>
+                    <div class="price-cart">
+                        <span class="price">$$$</span>
+                        <button class="cart-button"><i class="bi bi-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repite este bloque para cada libro adicional -->
+            <div class="book-item">
+                <div class="book-image">Imagen</div>
+                <div class="book-info">
+                    <h3>Nombre Libro <span>⭐⭐⭐⭐⭐</span></h3>
+                    <p>Nombre Autor</p>
+                    <p>Nombre Editorial</p>
+                    <p>Stock: Sí/No</p>
+                    <div class="price-cart">
+                        <span class="price">$$$</span>
+                        <button class="cart-button">
+                            <i class="bi bi-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-links">
+            <h3>Más Información</h3>
+            <ul>
+                <li>Contacto</li>
+                <li>Política de privacidad</li>
+                <li>Política de cookies</li>
+                <li>Aviso legal</li>
+                <li>Condiciones generales de contratación</li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <img class="logopagina" src="imagenes/logo.png" alt="https://images.vexels.com/content/229082/preview/book-circles-logo-82dff4.png">
+            <div class="social-icons">
+                <div class="icon"><i class="bi bi-facebook"></i></div>
+                    <div class="icon"><i class="bi bi-twitter"></i></div>
+                    <div class="icon"><i class="bi bi-instagram"></i></div>
+                    <div class="icon"><i class="bi bi-envelope"></i></div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

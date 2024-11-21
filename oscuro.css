@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Inter";
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* border:1px solid red; */
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo, .options {
+    font-size: 1.5rem;
+}
+
+.searchbar {
+    position: relative;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.searchbar input {
+    width:100%;
+    padding: 10px 40px 10px 15px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+}
+
+.searchbar button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #F5C87F;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.logopagina{
+    height: 10vh;
+}
+
+.social-media .logopagina{
+    margin-top: 30px;
+    /* border:1px solid red; */
+}
+
+main h3{
+    margin: 0;
+    font-size: 1em;
+    font-weight: normal;
+    color: white;
+}
+
+.book-image h3{
+    color:black;
+}
+
+.featured-image p{
+    color: black;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    padding-left:100px;
+    padding-right:100px; 
+    background-color: #282726;
+}
+
+.featured-image {
+    background-color: #EDA7B8;
+    text-align: center;
+    padding: 50px;
+    font-size: 1.5rem;
+    margin-bottom: 10vh;
+    /* border: 1px solid red; */
+}
+ @media (max-width:400px){
+    .featured-image {
+        background-color: #EDA7B8;
+        
+        padding: 60px;
+        font-size: 1.5rem;
+        margin-bottom: 10vh;
+        
+    }
+    main {
+    flex: 1;
+    padding: 0px;
+    padding-left:0px;
+    padding-right:0px; 
+    background-color: #282726;
+    }
+    .book-section{
+        flex: 1;
+        padding: 20px;
+        padding-left:100px;
+        padding-right:100px; 
+    }
+    .logopagina{
+        height: 10vh;
+    }
+} 
+
+main p{
+    color: #bebcbc;
+    font-size: 1.2em;
+    /* margin-bottom: 20px; */
+}
+
+
+.book-section {
+    /* border: 1px solid red; */
+    /* background-color: #ffffff; */
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 120px;
+    margin-top: 20px;
+}
+
+.seccionlibro{
+    font-style:italic;
+}
+
+ @media (max-width:1500px) {
+    .book-section {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .logopagina{
+        width: 10vh;
+        margin-left:12vh;
+    }
+} 
+
+.book-category {
+    background-color: #7c7575;
+    /* background-color: #ffffff;  */
+    /* background-color: #DCDAD7; */
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    /* border: 1px solid #ccc; */
+    text-align: center;
+}
+
+.book-image {
+    position:relative;
+
+    /* border: 1px solid red; */
+    height: 400px;
+    max-width: 250px;
+    background-color: #A6FFB0;
+    margin-bottom: 10px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #c5c4c2;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: -20px;
+}
+
+.right-arrow {
+    right:-20px;
+}
+
+.arrow-button i {
+    font-size: 1.2rem;
+}
+
+
+.book-price {
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /* background-color: #EAC7C7; */
+    max-width: 250px;
+    margin:auto;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-left:7vh;
+    
+}
+
+.price {
+    font-weight: bold;
+    color:red;
+    margin:auto;
+}
+
+.buy-button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    margin:auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p{
+    padding-top: 6vh;
+}
+
+
+.footer-links, .social-media {
+    width: 45%;
+}
+
+.footer-links h3 {
+    margin-bottom: 10px;
+    padding-left:30vh;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 1vh;
+    margin-left: 35vh;
+}
+
+ @media (max-width: 800px){
+    .footer-links ul{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .footer-links h3 {
+        margin-bottom: 0px;
+        padding-left:0vh;
+    }
+
+    .logopagina{
+        width: 10vh;
+        margin-left:10vh;
+    }
+} 
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.social-media{
+    display: flex;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    /* background-color: #555; */
+    color: white;
+    display: flex;
+    margin-left:8vh;
+    margin-top: 4vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+ @media (max-width: 1500px){
+    .icon{
+        margin-left:2vh;
+    }
+    .social-icons{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+        padding-right: 5vh;
+    }
+
+    .social-media{
+        display: flex;
+        flex-direction: column;
+    }
+} 
+
+@media (max-width:400px){
+    .social-icons {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+        padding-right: 5vh;
+    }
+    
+    .social-media{
+        display: flex;
+        flex-direction: column;
+    }
+} 
+
+
+
+
+
+
+
